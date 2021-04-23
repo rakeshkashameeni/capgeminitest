@@ -1,0 +1,27 @@
+{
+  "name": "tut-api-testing",
+  "version": "1.0.0",
+  "description": "https://jsonplaceholder.typicode.com/users https://www.postman.com/ https://learning.postman.com/docs/postman/scripts/postman-sandbox-api-reference/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.37",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "jsonpath": "^1.0.2",
+    "mocha": "^8.0.1",
+    "request": "^2.88.2",
+    "unirest": "^0.6.0",
+    "xmldom": "^0.3.0",
+    "xpath": "0.0.27"
+  }
+}
