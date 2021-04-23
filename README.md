@@ -1,6 +1,7 @@
 # Selenium Test
 - You need to clone repo in IntelliJ IDEA
-- then run mvn test command to run the tests
+- Make sure that cucumber plugin is installed
+- then right click on feature file and run the test
 
 # API tests
 - Clone repo
