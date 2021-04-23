@@ -7,4 +7,5 @@
 - Clone repo
 - Make sure NodeJS is installed on your machine
 - then run npm install
+- create .env file and add KEY={API Key for Weather API}
 - then run npx mocha ./json2/weather_tests.js
