@@ -5,5 +5,6 @@
 
 # API tests
 - Clone repo
+- Make sure NodeJS is installed on your machine
 - then run npm install
-- then run "npx mocha ./json2/weather_tests.js
+- then run npx mocha ./json2/weather_tests.js
