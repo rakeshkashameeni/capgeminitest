@@ -1,7 +1,8 @@
 package com.capgemini;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.*;
+//import cucumber.api.java.en.Given;
+//import cucumber.api.java.en.Then;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.junit.Assert;
@@ -18,8 +19,10 @@ public class SeleniumSteps {
     }
 
 
+
+
     @Given("^I am on the home page of vic roads site$")
-    public void iAmOnTheHomePageOfSoftpost() throws Throwable {
+    public void iAmOnTheHomePageOfVicRoads() throws Throwable {
          driver.get("https://www.vicroads.vic.gov.au/");
 
     }
@@ -34,7 +37,7 @@ public class SeleniumSteps {
     }
 
     @Then("^I should be able to calculate and see the rego fees for various vehicle types$")
-    public void iShouldSeeThatTitleContainsTutorials() throws Throwable {
+    public void IShouldBeAbleToSeeRegoFees() throws Throwable {
 
         JSONArray carFees = GetThreeMonthFees();
         String threeMonthFee = carFees.get(0).toString().replace("$","");

@@ -1,8 +1,9 @@
 package com.capgemini;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+//import io.cucumber.co
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -30,18 +31,13 @@ public class MySharedClass {
 
     @After
     public void closeBrowser(Scenario scenario){
-
-        if (scenario.isFailed()) {
-           scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
-           scenario.write("Scenario failed");
-        }else{
-           scenario.write("Scenario passed");
-        }
-
-        try {
-            this.driver.quit();
-        }catch(Exception ex){
+        try
+        {
+            driver.quit();
+        }catch (Exception ex){
 
         }
+
+
     }
 }
