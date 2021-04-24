@@ -20,7 +20,9 @@
 - Verify that user is able to start the process all over again and previous car details are wiped out.
 
 
-# Test Strateg
+# Test Strategy for API tests
 
-- Tech Stack - Java scruo 
-- Website's calculate rego fees feature shou
+- Tech Stack - Java script, Mocha and Chai. JavaScript is very easy when working with JSON object 
+- Verify that both weather and pollution endpoints return invalid api key error if invalid key is sent in query string
+- Verify that the schema of both weather and pollution endpoint is matching with expected schema
+- Verify that "city is not found" error is sent in response if invalid city is sent in query string
